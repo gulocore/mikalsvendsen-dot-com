@@ -19,7 +19,7 @@
 
     </script>
     <script>
-        (()=>{(function(){"use strict";if(window.location.pathname.includes("/404")||window.location.pathname.endsWith("404.html"))return;const i=new URLSearchParams(window.location.search);if(!(i.get("preRelease")!==null||i.get("prerelease")!==null||i.get("PRERELEASE")!==null)){const t="/404.html?from="+encodeURIComponent(window.location.href);window.location.replace(t);return}function a(){document.querySelectorAll("a[href]").forEach(function(n){const e=n.getAttribute("href");if(!e||e.startsWith("http")||e.startsWith("#")||e.startsWith("mailto:")||n.hasAttribute("data-language")||e.includes("preRelease")||e.includes("prerelease"))return;const s=e.includes("?")?"&":"?";n.setAttribute("href",e+s+"preRelease")})}function r(){a(),document.addEventListener("click",function(t){t.target.closest("a")&&setTimeout(a,10)})}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r()})();})();
+        (()=>{(function(){"use strict";if(window.location.pathname.includes("/404")||window.location.pathname.endsWith("404.html"))return;const n=new URLSearchParams(window.location.search);if(!(n.get("preRelease")!==null||n.get("prerelease")!==null||n.get("PRERELEASE")!==null)){window.location.replace("/404.html?blocked=true");return}function a(){document.querySelectorAll("a[href]").forEach(function(t){const e=t.getAttribute("href");if(!e||e.startsWith("http")||e.startsWith("#")||e.startsWith("mailto:")||t.hasAttribute("data-language")||e.includes("preRelease")||e.includes("prerelease"))return;const r=e.includes("?")?"&":"?";t.setAttribute("href",e+r+"preRelease")})}function i(){a(),document.addEventListener("click",function(s){s.target.closest("a")&&setTimeout(a,10)})}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",i):i()})();})();
 
     </script>
 </head>
@@ -100,11 +100,15 @@
     <div class="content-wrapper">
         <main>
             
+
+
+
+
 <section class="error-page">
     <div class="error-container">
         <h1 class="error-code" data-lang-key="errorCode">404</h1>
         <h2 class="error-title" id="errorTitle" data-lang-key="errorTitle">Page Not Found</h2>
-        <p class="error-message" id="errorMessage" data-lang-key="errorMessage">The page you are looking for does not exist or has been moved.</p>
+        <p class="error-message" id="errorMessage" data-lang-key="errorMessage">The page you are looking for doesn&#39;t exist or has been moved.</p>
 
         <!-- Pre-release specific message -->
         <div id="preReleaseMessage" style="display: none;">
@@ -121,26 +125,11 @@
 </section>
 
 <script>
-    // Language content for 404 page
+    // Language content loaded from JSON files
     const translations = {
-        en: {
-            errorCode: "404",
-            errorTitle: "Page Not Found",
-            errorMessage: "The page you are looking for doesn't exist or has been moved.",
-            returnHome: "Return to Homepage"
-        },
-        sv: {
-            errorCode: "404",
-            errorTitle: "Sidan hittades inte",
-            errorMessage: "Sidan du letar efter finns inte eller har flyttats.",
-            returnHome: "Återgå till startsidan"
-        },
-        no: {
-            errorCode: "404",
-            errorTitle: "Siden ble ikke funnet",
-            errorMessage: "Siden du leter etter eksisterer ikke eller har blitt flyttet.",
-            returnHome: "Gå tilbake til hjemmesiden"
-        }
+        en: {"title":"404 - Page Not Found","errorCode":"404","errorTitle":"Page Not Found","errorMessage":"The page you are looking for doesn't exist or has been moved.","returnHome":"Return to Homepage"},
+        sv: {"title":"404 - Sidan hittades inte","errorCode":"404","errorTitle":"Sidan hittades inte","errorMessage":"Sidan du letar efter finns inte eller har flyttats.","returnHome":"Återgå till startsidan"},
+        no: {"title":"404 - Siden ble ikke funnet","errorCode":"404","errorTitle":"Siden ble ikke funnet","errorMessage":"Siden du leter etter eksisterer ikke eller har blitt flyttet.","returnHome":"Gå tilbake til hjemmesiden"}
     };
 
     // Detect language from URL or browser preference
@@ -186,14 +175,19 @@
             }
             homeLink.setAttribute('href', homeUrl);
         }
+
+        // Update page title
+        if (content.title) {
+            document.title = content.title;
+        }
     }
 
     // Check if this is a pre-release redirect
     function handlePreRelease() {
         const urlParams = new URLSearchParams(window.location.search);
-        const fromParam = urlParams.get('from');
+        const isBlocked = urlParams.get('blocked') === 'true';
 
-        if (fromParam) {
+        if (isBlocked) {
             // This is someone trying to access without preRelease parameter
             // Show pre-release message and HIDE the home link
             document.getElementById('errorMessage').style.display = 'none';
@@ -204,7 +198,6 @@
             document.getElementById('homeLink').style.display = 'none';
         }
     }
-
     // Initialize the page
     document.addEventListener('DOMContentLoaded', function() {
         updateLanguage();
