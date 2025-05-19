@@ -125,83 +125,19 @@
 </section>
 
 <script>
-    // Language content loaded from JSON files
-    const translations = {
-        en: {"title":"404 - Page Not Found","errorCode":"404","errorTitle":"Page Not Found","errorMessage":"The page you are looking for doesn't exist or has been moved.","returnHome":"Return to Homepage"},
-        sv: {"title":"404 - Sidan hittades inte","errorCode":"404","errorTitle":"Sidan hittades inte","errorMessage":"Sidan du letar efter finns inte eller har flyttats.","returnHome":"Återgå till startsidan"},
-        no: {"title":"404 - Siden ble ikke funnet","errorCode":"404","errorTitle":"Siden ble ikke funnet","errorMessage":"Siden du leter etter eksisterer ikke eller har blitt flyttet.","returnHome":"Gå tilbake til hjemmesiden"}
-    };
+    (()=>{(function(){"use strict";window.handle404Page=function(r){function c(){const e=new URLSearchParams(window.location.search).get("lang");if(e&&r[e])return e;const a=navigator.language.slice(0,2);return r[a]?a:"en"}function l(){const t=c(),e=r[t];document.querySelectorAll("[data-lang-key]").forEach(o=>{const n=o.getAttribute("data-lang-key");e[n]&&(o.textContent=e[n])});const a=document.getElementById("homeLink");if(a){const o=new URLSearchParams(window.location.search).has("preRelease");let n=t==="en"?"/home/":`/${t}/home/`;n+=`?lang=${t}`,o&&(n+="&preRelease"),a.setAttribute("href",n)}e.title&&(document.title=e.title)}function s(){new URLSearchParams(window.location.search).get("blocked")==="true"&&(document.getElementById("errorMessage").style.display="none",document.getElementById("errorTitle").textContent="Access Restricted",document.getElementById("preReleaseMessage").style.display="block",document.getElementById("homeLink").style.display="none")}l(),s()}})();})();
 
-    // Detect language from URL or browser preference
-    function detectLanguage() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const langParam = urlParams.get('lang');
+</script>
 
-        if (langParam && translations[langParam]) {
-            return langParam;
-        }
-
-        // Try to detect from browser language
-        const browserLang = navigator.language.slice(0, 2);
-        if (translations[browserLang]) {
-            return browserLang;
-        }
-
-        // Default to English
-        return 'en';
-    }
-
-    // Update page content with detected language
-    function updateLanguage() {
-        const lang = detectLanguage();
-        const content = translations[lang];
-
-        // Update all elements with data-lang-key
-        document.querySelectorAll('[data-lang-key]').forEach(element => {
-            const key = element.getAttribute('data-lang-key');
-            if (content[key]) {
-                element.textContent = content[key];
-            }
-        });
-
-        // Update home link URL
-        const homeLink = document.getElementById('homeLink');
-        if (homeLink) {
-            const hasPreRelease = new URLSearchParams(window.location.search).has('preRelease');
-            let homeUrl = lang === 'en' ? '/home/' : `/${lang}/home/`;
-            homeUrl += `?lang=${lang}`;
-            if (hasPreRelease) {
-                homeUrl += '&preRelease';
-            }
-            homeLink.setAttribute('href', homeUrl);
-        }
-
-        // Update page title
-        if (content.title) {
-            document.title = content.title;
-        }
-    }
-
-    // Check if this is a pre-release redirect
-    function handlePreRelease() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const isBlocked = urlParams.get('blocked') === 'true';
-
-        if (isBlocked) {
-            // This is someone trying to access without preRelease parameter
-            // Show pre-release message and HIDE the home link
-            document.getElementById('errorMessage').style.display = 'none';
-            document.getElementById('errorTitle').textContent = 'Access Restricted';
-            document.getElementById('preReleaseMessage').style.display = 'block';
-
-            // Hide the home link completely - no easy bypass!
-            document.getElementById('homeLink').style.display = 'none';
-        }
-    }
-    // Initialize the page
+<script>
     document.addEventListener('DOMContentLoaded', function() {
-        updateLanguage();
-        handlePreRelease();
+        const translations = {
+            en: {"title":"404 - Page Not Found","errorCode":"404","errorTitle":"Page Not Found","errorMessage":"The page you are looking for doesn't exist or has been moved.","returnHome":"Return to Homepage"},
+            sv: {"title":"404 - Sidan hittades inte","errorCode":"404","errorTitle":"Sidan hittades inte","errorMessage":"Sidan du letar efter finns inte eller har flyttats.","returnHome":"Återgå till startsidan"},
+            no: {"title":"404 - Siden ble ikke funnet","errorCode":"404","errorTitle":"Siden ble ikke funnet","errorMessage":"Siden du leter etter eksisterer ikke eller har blitt flyttet.","returnHome":"Gå tilbake til hjemmesiden"}
+        };
+
+        window.handle404Page(translations);
     });
 </script>
         </main>
