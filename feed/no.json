@@ -1,0 +1,21 @@
+{
+"version": "https://jsonfeed.org/version/1.1",
+"title": "Mikal Svendsen | Programvareingeniør Mikal Svendsen",
+"language": "no",
+"home_page_url": "https://mikalsvendsen.com",
+"feed_url": "https://mikalsvendsen.com/feed/no.json",
+"description": "Jeg kan hjelpe deg med å automatisere og digitalisere, integrere med partnere, kunder og avansert utstyr. Jeg har lidenskap for kvalitet, bærekraft og elegant enkelhet",
+"author": {
+"name": "Mikal Svendsen"
+},
+"items": [
+        {
+        "id": "https://mikalsvendsen.com/blog/posts/2025-05-06-hello-world/?lang=no",
+        "url": "https://mikalsvendsen.com/blog/posts/2025-05-06-hello-world/?lang=no",
+        "title": "Hei Verden: Mitt Første Blogginnlegg",
+        "summary": "Dette er mitt første blogginnlegg! Jeg er glad for å kunne dele mine tanker og erfaringer med deg.",
+        "content_html": "<h1>Hei Verden: Mitt Første Blogginnlegg</h1><p>Dette er mitt første blogginnlegg! Jeg er glad for å kunne dele mine tanker og erfaringer med deg.</p><h2>Kom i Gang</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget felis vel nisi bibendum malesuada. Aenean tincidunt fermentum nulla, ac hendrerit justo. Sed eu diam non dui lobortis semper.</p><h3>Hva Jeg Har Lært</h3><ul><li>Eleventy er en fantastisk statisk nettstedgenerator</li><li>Nordic Twilight-temaet ser flott ut</li><li>Flerspråklig støtte gjør nettstedet tilgjengelig for flere mennesker</li></ul><h2>Neste Steg</h2><p>I fremtidige innlegg vil jeg utforske mer avanserte emner og dele prosjektene mine. Følg med for mer innhold som kommer snart!</p><pre><code class=\"language-javascript\">// A simple code example\nfunction greet(name) {\n    return `Hello, ${name}!`;\n}\n\nconsole.log('greet('World'));\n</code></pre>",
+        "date_published": "2025-05-06T15:45:00Z"
+        }
+]
+}
