@@ -13,9 +13,13 @@
     <link rel="stylesheet" href="/css/fontawesome.min.css">
     <link rel="stylesheet" href="/css/main.css">
 
-    <!-- Prevent sidebar flicker -->
+    <!-- Anti-flicker scripts -->
     <script>
         (()=>{(function(){localStorage.getItem("sidebarCollapsed")==="true"&&(document.documentElement.classList.add("sidebar-collapsed-init"),document.documentElement.style.setProperty("--sidebar-active-transition-speed","0s"),document.addEventListener("DOMContentLoaded",function(){const e=document.getElementById("sidebar");e&&(e.classList.add("collapsed"),document.body.classList.add("sidebar-collapsed"))}))})();})();
+
+    </script>
+    <script>
+        (()=>{(function(){"use strict";if(window.location.pathname.includes("/404")||window.location.pathname.endsWith("404.html"))return;const i=new URLSearchParams(window.location.search);if(!(i.get("preRelease")!==null||i.get("prerelease")!==null||i.get("PRERELEASE")!==null)){const t="/404.html?from="+encodeURIComponent(window.location.href);window.location.replace(t);return}function a(){document.querySelectorAll("a[href]").forEach(function(n){const e=n.getAttribute("href");if(!e||e.startsWith("http")||e.startsWith("#")||e.startsWith("mailto:")||n.hasAttribute("data-language")||e.includes("preRelease")||e.includes("prerelease"))return;const s=e.includes("?")?"&":"?";n.setAttribute("href",e+s+"preRelease")})}function r(){a(),document.addEventListener("click",function(t){t.target.closest("a")&&setTimeout(a,10)})}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r()})();})();
 
     </script>
 </head>

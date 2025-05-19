@@ -4,11 +4,59 @@
     <meta charset="UTF-8">
     <title>Redirecting...</title>
     <script>
-        // Redirect logic here
-        window.location.href = '/home/';
+        const LANG_PREF_KEY = 'languagePreference';
+
+        function getStoredLanguagePreference() {
+            return localStorage.getItem(LANG_PREF_KEY);
+        }
+
+        function getRedirectPath() {
+            // Get current URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+
+            // Check if preRelease parameter exists
+            const hasPreRelease = urlParams.has('preRelease') ||
+                urlParams.has('prerelease') ||
+                urlParams.has('PRERELEASE');
+
+            // Default language is English
+            const defaultLang = 'en';
+
+            // Get the user's stored preference (if any)
+            const storedPref = getStoredLanguagePreference();
+
+            // Determine target language
+            let targetLang;
+            if (storedPref) {
+                targetLang = storedPref;
+            } else {
+                targetLang = defaultLang;
+            }
+
+            // Build the redirect URL
+            let redirectUrl = targetLang === 'en' ? '/home/' : `/${targetLang}/home/`;
+            redirectUrl += '?lang=' + targetLang;
+
+            // Add ignorePrefLang if no stored preference
+            if (!storedPref) {
+                redirectUrl += '&ignorePrefLang';
+            }
+
+            // IMPORTANT: Preserve preRelease parameter if it exists
+            if (hasPreRelease) {
+                redirectUrl += '&preRelease';
+            }
+
+            return redirectUrl;
+        }
+
+        // Redirect to appropriate language version
+        window.location.href = getRedirectPath();
     </script>
+    <!-- Fallback meta redirect if JavaScript is disabled -->
+    <meta http-equiv="refresh" content="0;url=/home/?lang=en" />
 </head>
 <body>
-<p>Redirecting...</p>
+<p>Redirecting to appropriate language version...</p>
 </body>
 </html>
