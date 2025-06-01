@@ -1,0 +1,25 @@
+{
+  "defaultTheme": "nordic-twilight",
+  "themes": [
+    {
+      "id": "library-delight",
+      "name": "Library Delight",
+      "description": "Captures the warm, scholarly elegance of a beautiful library.",
+      "author": "Mikal Svendsen",
+      "version": "1.0.0",
+      "isDefault": false,
+      "type": "light",
+      "cssPath": "/css/themes/library-delight.css"
+    },
+    {
+      "id": "nordic-twilight",
+      "name": "Nordic Twilight",
+      "description": "A dark theme inspired by the Northern Lights",
+      "author": "Mikal Svendsen",
+      "version": "1.0.0",
+      "isDefault": true,
+      "type": "dark",
+      "cssPath": "/css/default.css"
+    }
+  ]
+}
