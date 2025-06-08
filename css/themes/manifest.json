@@ -36,29 +36,8 @@
       "isDefault": false,
       "hasJavaScript": true,
       "jsPath": "/js/themes/nordic-twilight-3D.js",
-      "dependencies": [
-        "three"
-      ],
-      "components": [
-        "nordicTwilight3DBackground",
-        "nordicTwilight3DParticles"
-      ],
-      "fallbackTheme": "nordic-twilight",
-      "features": [
-        "3d-background",
-        "particle-system",
-        "interactive-animations"
-      ],
-      "performance": {
-        "minGPU": "integrated",
-        "recommendedGPU": "dedicated",
-        "fallbackBehavior": "graceful-degradation"
-      },
-      "settings": {
-        "defaultAnimationSpeed": 1,
-        "defaultParticleCount": 100,
-        "enableAutoOptimization": true
-      },
+      "dependencies": [],
+      "type": "dark",
       "cssPath": "/css/themes/nordic-twilight-3D.css"
     }
   ]
