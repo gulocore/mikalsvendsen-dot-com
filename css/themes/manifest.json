@@ -8,6 +8,9 @@
       "author": "Mikal Svendsen",
       "version": "1.0.0",
       "isDefault": false,
+      "hasJavaScript": false,
+      "jsPath": null,
+      "dependencies": [],
       "type": "light",
       "cssPath": "/css/themes/library-delight.css"
     },
@@ -18,8 +21,45 @@
       "author": "Mikal Svendsen",
       "version": "1.0.0",
       "isDefault": true,
+      "hasJavaScript": false,
+      "jsPath": null,
+      "dependencies": [],
       "type": "dark",
       "cssPath": "/css/default.css"
+    },
+    {
+      "id": "nordic-twilight-3D",
+      "name": "Nordic Twilight 3D",
+      "description": "Enhanced Nordic Twilight theme with 3D background effects and particle systems",
+      "author": "Theme Developer",
+      "version": "1.0.0",
+      "isDefault": false,
+      "hasJavaScript": true,
+      "jsPath": "/js/themes/nordic-twilight-3D.js",
+      "dependencies": [
+        "three"
+      ],
+      "components": [
+        "nordicTwilight3DBackground",
+        "nordicTwilight3DParticles"
+      ],
+      "fallbackTheme": "nordic-twilight",
+      "features": [
+        "3d-background",
+        "particle-system",
+        "interactive-animations"
+      ],
+      "performance": {
+        "minGPU": "integrated",
+        "recommendedGPU": "dedicated",
+        "fallbackBehavior": "graceful-degradation"
+      },
+      "settings": {
+        "defaultAnimationSpeed": 1,
+        "defaultParticleCount": 100,
+        "enableAutoOptimization": true
+      },
+      "cssPath": "/css/themes/nordic-twilight-3D.css"
     }
   ]
 }
