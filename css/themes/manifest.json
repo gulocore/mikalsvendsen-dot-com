@@ -26,6 +26,38 @@
       "dependencies": [],
       "type": "dark",
       "cssPath": "/css/themes/nordic-twilight-3D.css"
+    },
+    {
+      "id": "skybox-3D",
+      "name": "Skybox 3D",
+      "description": "Immersive 3D HDR skybox background with glass morphism UI and scroll parallax",
+      "author": "Mikal Svendsen",
+      "version": "1.0.0",
+      "isDefault": false,
+      "hasJavaScript": true,
+      "jsPath": "/js/themes/skybox-3D.js",
+      "dependencies": [],
+      "type": "light",
+      "features": [
+        "3d-background",
+        "hdr-skybox",
+        "glass-morphism",
+        "scroll-parallax",
+        "performance-detection",
+        "mobile-optimized"
+      ],
+      "requirements": {
+        "webgl": true,
+        "threejs": "r128+",
+        "minMemory": "2GB"
+      },
+      "compatibility": {
+        "mobile": true,
+        "tablet": true,
+        "desktop": true,
+        "lowEnd": "fallback"
+      },
+      "cssPath": "/css/themes/skybox-3D.css"
     }
   ]
 }
