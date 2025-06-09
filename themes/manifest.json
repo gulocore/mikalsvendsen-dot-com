@@ -39,10 +39,10 @@
       "version": "1.0.0",
       "isDefault": false,
       "hasJavaScript": true,
-      "hasAssets": false,
+      "hasAssets": true,
       "jsPath": "/themes/skybox-3D/skybox-3D.js",
       "cssPath": "/themes/skybox-3D/skybox-3D.css",
-      "assetsPath": null,
+      "assetsPath": "/themes/skybox-3D/assets",
       "dependencies": [],
       "type": "light",
       "features": [
