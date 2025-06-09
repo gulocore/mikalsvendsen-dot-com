@@ -1,0 +1,26 @@
+{
+  "name": "Skybox 3D",
+  "description": "Immersive 3D HDR skybox background with glass morphism UI and scroll parallax",
+  "author": "Mikal Svendsen",
+  "version": "1.0.0",
+  "type": "light",
+  "features": [
+    "3d-background",
+    "hdr-skybox",
+    "glass-morphism",
+    "scroll-parallax",
+    "performance-detection",
+    "mobile-optimized"
+  ],
+  "requirements": {
+    "webgl": true,
+    "threejs": "r128+",
+    "minMemory": "2GB"
+  },
+  "compatibility": {
+    "mobile": true,
+    "tablet": true,
+    "desktop": true,
+    "lowEnd": "fallback"
+  }
+}
