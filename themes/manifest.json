@@ -10,10 +10,10 @@
       "isDefault": true,
       "hasJavaScript": false,
       "hasAssets": false,
+      "hasSkybox": false,
       "jsPath": null,
-      "cssPath": "/css/default.css",
       "assetsPath": null,
-      "dependencies": [],
+      "skyboxJsonPath": null,
       "type": "dark"
     },
     {
@@ -25,10 +25,11 @@
       "isDefault": false,
       "hasJavaScript": true,
       "hasAssets": false,
+      "hasSkybox": false,
       "jsPath": "/themes/nordic-twilight-3D/nordic-twilight-3D.js",
       "cssPath": "/themes/nordic-twilight-3D/nordic-twilight-3D.css",
       "assetsPath": null,
-      "dependencies": [],
+      "skyboxJsonPath": null,
       "type": "dark"
     },
     {
@@ -40,10 +41,11 @@
       "isDefault": false,
       "hasJavaScript": true,
       "hasAssets": true,
+      "hasSkybox": false,
       "jsPath": "/themes/skybox-3D/skybox-3D.js",
       "cssPath": "/themes/skybox-3D/skybox-3D.css",
       "assetsPath": "/themes/skybox-3D/assets",
-      "dependencies": [],
+      "skyboxJsonPath": null,
       "type": "light",
       "features": [
         "3d-background",
