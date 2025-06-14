@@ -39,33 +39,14 @@
       "author": "Mikal Svendsen",
       "version": "1.0.0",
       "isDefault": false,
-      "hasJavaScript": true,
+      "hasJavaScript": false,
       "hasAssets": true,
-      "hasSkybox": false,
-      "jsPath": "/themes/skybox-3D/skybox-3D.js",
+      "hasSkybox": true,
+      "jsPath": null,
       "cssPath": "/themes/skybox-3D/skybox-3D.css",
       "assetsPath": "/themes/skybox-3D/assets",
-      "skyboxJsonPath": null,
-      "type": "light",
-      "features": [
-        "3d-background",
-        "hdr-skybox",
-        "glass-morphism",
-        "scroll-parallax",
-        "performance-detection",
-        "mobile-optimized"
-      ],
-      "requirements": {
-        "webgl": true,
-        "threejs": "r128+",
-        "minMemory": "2GB"
-      },
-      "compatibility": {
-        "mobile": true,
-        "tablet": true,
-        "desktop": true,
-        "lowEnd": "fallback"
-      }
+      "skyboxJsonPath": "/themes/skybox-3D/skybox.json",
+      "type": "light"
     }
   ]
 }

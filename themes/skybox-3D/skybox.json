@@ -1,0 +1,53 @@
+{
+  "basePath": "/themes/skybox-3D/assets/mountains_aurora",
+  "qualities": [
+    {
+      "name": "ultra",
+      "suffix": "_8k",
+      "minMemory": 16,
+      "minTextureSize": 8192,
+      "requiresDesktop": true
+    },
+    {
+      "name": "high",
+      "suffix": "_4k",
+      "minMemory": 8,
+      "minTextureSize": 4096,
+      "requiresDesktop": true
+    },
+    {
+      "name": "medium",
+      "suffix": "_2k",
+      "minMemory": 4,
+      "minTextureSize": 2048,
+      "requiresDesktop": false
+    },
+    {
+      "name": "low",
+      "suffix": "_1k",
+      "minMemory": 2,
+      "minTextureSize": 1024,
+      "requiresDesktop": false
+    }
+  ],
+  "fallbackClass": "skybox-3D-fallback",
+  "parallax": {
+    "scenicRoute": {
+      "path": [
+        { "viewportHeight": 0, "rotationY": 0, "rotationX": 0 },
+        { "viewportHeight": 2, "rotationY": 1.57, "rotationX": -0.1 },
+        { "viewportHeight": 4, "rotationY": 3.14, "rotationX": 0.05 },
+        { "viewportHeight": 6, "rotationY": 4.71, "rotationX": -0.05 },
+        { "viewportHeight": 8, "rotationY": 6.28, "rotationX": 0.1 },
+        { "viewportHeight": 10, "rotationY": 7.85, "rotationX": 0 }
+      ]
+    },
+    "bobbing": {
+      "verticalAmount": 0.025,
+      "verticalSpeed": 0.0008,
+      "horizontalAmount": 0.008,
+      "horizontalSpeed": 0.0005
+    }
+  },
+  "scrollContainer": ".content-wrapper"
+}
