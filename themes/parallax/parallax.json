@@ -1,0 +1,165 @@
+{
+  "layers": [
+    {
+      "name": "1",
+      "basePath": "/themes/parallax/assets/1",
+      "format": "png",
+      "qualities": [
+        {
+          "name": "medium",
+          "suffix": "",
+          "minMemory": 2,
+          "maxWidth": 1980
+        }
+      ],
+      "speed": 0.0001,
+      "direction": "horizontal",
+      "zIndex": -400,
+      "opacity": 1,
+      "targetElement": "body",
+      "scrollContainer": ".content-wrapper",
+      "repeat": "repeat-x"
+    },
+    {
+      "name": "2",
+      "basePath": "/themes/parallax/assets/2",
+      "format": "png",
+      "qualities": [
+        {
+          "name": "medium",
+          "suffix": "",
+          "minMemory": 2,
+          "maxWidth": 1980
+        }
+      ],
+      "speed": 0.0005,
+      "direction": "horizontal",
+      "zIndex": -300,
+      "opacity": 1,
+      "targetElement": "body",
+      "scrollContainer": ".content-wrapper",
+      "repeat": "repeat-x"
+    },
+    {
+      "name": "3",
+      "basePath": "/themes/parallax/assets/3",
+      "format": "png",
+      "qualities": [
+        {
+          "name": "medium",
+          "suffix": "",
+          "minMemory": 3,
+          "maxWidth": 1980
+        }
+      ],
+      "speed": 0.001,
+      "direction": "horizontal",
+      "zIndex": -100,
+      "opacity": 1,
+      "targetElement": "body",
+      "scrollContainer": ".content-wrapper",
+      "repeat": "repeat-x"
+    },
+    {
+      "name": "4",
+      "basePath": "/themes/parallax/assets/4",
+      "format": "png",
+      "qualities": [
+        {
+          "name": "medium",
+          "suffix": "",
+          "minMemory": 2,
+          "maxWidth": 1980
+        }
+      ],
+      "speed": 0.005,
+      "direction": "horizontal",
+      "zIndex": -50,
+      "opacity": 1,
+      "targetElement": "body",
+      "scrollContainer": ".content-wrapper",
+      "repeat": "repeat-x"
+    },
+    {
+      "name": "5",
+      "basePath": "/themes/parallax/assets/5",
+      "format": "png",
+      "qualities": [
+        {
+          "name": "medium",
+          "suffix": "",
+          "minMemory": 2,
+          "maxWidth": 1980
+        }
+      ],
+      "speed": 0.01,
+      "direction": "horizontal",
+      "zIndex": -40,
+      "opacity": 1,
+      "targetElement": "body",
+      "scrollContainer": ".content-wrapper",
+      "repeat": "repeat-x"
+    },
+    {
+      "name": "6",
+      "basePath": "/themes/parallax/assets/6",
+      "format": "png",
+      "qualities": [
+        {
+          "name": "medium",
+          "suffix": "",
+          "minMemory": 2,
+          "maxWidth": 1980
+        }
+      ],
+      "speed": 0.05,
+      "direction": "horizontal",
+      "zIndex": -30,
+      "opacity": 1,
+      "targetElement": "body",
+      "scrollContainer": ".content-wrapper",
+      "repeat": "repeat-x"
+    },
+    {
+      "name": "7",
+      "basePath": "/themes/parallax/assets/7",
+      "format": "png",
+      "qualities": [
+        {
+          "name": "medium",
+          "suffix": "",
+          "minMemory": 2,
+          "maxWidth": 1980
+        }
+      ],
+      "speed": 0.1,
+      "direction": "horizontal",
+      "zIndex": -20,
+      "opacity": 1,
+      "targetElement": "body",
+      "scrollContainer": ".content-wrapper",
+      "repeat": "repeat-x"
+    },
+    {
+      "name": "8",
+      "basePath": "/themes/parallax/assets/8",
+      "format": "png",
+      "qualities": [
+        {
+          "name": "medium",
+          "suffix": "",
+          "minMemory": 2,
+          "maxWidth": 1980
+        }
+      ],
+      "speed": 0.2,
+      "direction": "horizontal",
+      "zIndex": -10,
+      "opacity": 1,
+      "targetElement": "body",
+      "scrollContainer": ".content-wrapper",
+      "repeat": "repeat-x"
+    }
+  ],
+  "fallbackClass": "parallax-fallback"
+}
