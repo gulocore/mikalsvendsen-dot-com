@@ -3,5 +3,6 @@
   "description": "2D parallax demo",
   "author": "Mikal Svendsen",
   "version": "1.0.0",
-  "type": "light"
+  "type": "light",
+  "mobileSupported": false
 }
