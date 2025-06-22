@@ -43,7 +43,7 @@
     {
       "id": "skybox-3D",
       "name": "Skybox 3D",
-      "description": "Immersive 3D HDR skybox background with glass morphism UI and scroll parallax",
+      "description": "Immersive 3D skybox background with scroll parallax",
       "author": "Mikal Svendsen",
       "version": "1.0.0",
       "isDefault": false,
@@ -58,7 +58,7 @@
       "skyboxJsonPath": "/themes/skybox-3D/skybox.json",
       "parallaxJsonPath": null,
       "backgroundType": "skybox",
-      "type": "light"
+      "type": "dark"
     }
   ]
 }
