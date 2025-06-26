@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <sitemap>
+        <loc>https://mikalsvendsen.com/sitemap-en.xml</loc>
+        <lastmod>2025-06-26T23:46:38.091Z</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://mikalsvendsen.com/sitemap-sv.xml</loc>
+        <lastmod>2025-06-26T23:46:38.091Z</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://mikalsvendsen.com/sitemap-no.xml</loc>
+        <lastmod>2025-06-26T23:46:38.091Z</lastmod>
+    </sitemap>
+</sitemapindex>

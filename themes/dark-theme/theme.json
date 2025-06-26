@@ -1,0 +1,8 @@
+{
+  "name": "Night",
+  "description": "A gentle dark theme",
+  "author": "Mikal Svendsen",
+  "version": "1.0.0",
+  "type": "dark",
+  "mobileSupported": true
+}

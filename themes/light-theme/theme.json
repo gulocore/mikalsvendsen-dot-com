@@ -1,0 +1,8 @@
+{
+  "name": "Clean Light",
+  "description": "Simple and clean light theme",
+  "author": "Mikal Svendsen",
+  "version": "1.0.0",
+  "type": "light",
+  "mobileSupported": true
+}
