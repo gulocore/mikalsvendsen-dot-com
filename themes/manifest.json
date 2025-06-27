@@ -63,7 +63,7 @@
     {
       "id": "parallax",
       "name": "Parallax",
-      "description": "2D parallax demo",
+      "description": "Multi-layer 2D parallax landscape theme",
       "author": "Mikal Svendsen",
       "version": "1.0.0",
       "isDefault": false,
@@ -82,7 +82,7 @@
     },
     {
       "id": "skybox-3D",
-      "name": "Skybox 3D",
+      "name": "Aurora Skybox",
       "description": "Immersive 3D skybox background with scroll parallax",
       "author": "Mikal Svendsen",
       "version": "1.0.0",
