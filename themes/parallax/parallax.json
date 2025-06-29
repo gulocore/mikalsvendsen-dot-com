@@ -16,7 +16,7 @@
       "zIndex": -400,
       "opacity": 1,
       "targetElement": "body",
-      "scrollContainer": ".content-wrapper",
+      "scrollContainer": ".right-area",
       "repeat": "repeat-x"
     },
     {
@@ -35,7 +35,7 @@
       "zIndex": -300,
       "opacity": 1,
       "targetElement": "body",
-      "scrollContainer": ".content-wrapper",
+      "scrollContainer": ".right-area",
       "repeat": "repeat-x"
     },
     {
@@ -54,7 +54,7 @@
       "zIndex": -100,
       "opacity": 1,
       "targetElement": "body",
-      "scrollContainer": ".content-wrapper",
+      "scrollContainer": ".right-area",
       "repeat": "repeat-x"
     },
     {
@@ -73,7 +73,7 @@
       "zIndex": -50,
       "opacity": 1,
       "targetElement": "body",
-      "scrollContainer": ".content-wrapper",
+      "scrollContainer": ".right-area",
       "repeat": "repeat-x"
     },
     {
@@ -92,7 +92,7 @@
       "zIndex": -40,
       "opacity": 1,
       "targetElement": "body",
-      "scrollContainer": ".content-wrapper",
+      "scrollContainer": ".right-area",
       "repeat": "repeat-x"
     },
     {
@@ -111,7 +111,7 @@
       "zIndex": -30,
       "opacity": 1,
       "targetElement": "body",
-      "scrollContainer": ".content-wrapper",
+      "scrollContainer": ".right-area",
       "repeat": "repeat-x"
     }
   ],

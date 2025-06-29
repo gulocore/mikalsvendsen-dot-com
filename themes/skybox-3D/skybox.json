@@ -49,5 +49,5 @@
       "horizontalSpeed": 0.0005
     }
   },
-  "scrollContainer": ".content-wrapper"
+  "scrollContainer": ".right-area"
 }
