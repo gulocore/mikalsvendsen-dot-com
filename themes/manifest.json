@@ -6,10 +6,9 @@
     {
       "id": "night",
       "name": "Night",
-      "description": "A gentle dark theme",
+      "description": "A gentle dark theme (default dark)",
       "author": "Mikal Svendsen",
       "version": "1.0.0",
-      "isDefault": true,
       "isDefaultDark": true,
       "isDefaultLight": false,
       "mobileSupported": true,
@@ -23,7 +22,8 @@
       "skyboxJsonPath": null,
       "parallaxJsonPath": null,
       "backgroundType": "none",
-      "type": "dark"
+      "type": "dark",
+      "isDefault": true
     },
     {
       "id": "nordic-twilight",
@@ -31,7 +31,6 @@
       "description": "A dark theme inspired by the Northern Lights",
       "author": "Mikal Svendsen",
       "version": "1.0.0",
-      "isDefault": false,
       "isDefaultDark": false,
       "isDefaultLight": false,
       "mobileSupported": true,
@@ -45,7 +44,8 @@
       "skyboxJsonPath": null,
       "parallaxJsonPath": null,
       "backgroundType": "none",
-      "type": "dark"
+      "type": "dark",
+      "isDefault": false
     },
     {
       "id": "parallax",
@@ -53,7 +53,6 @@
       "description": "Multi-layer 2D parallax landscape theme",
       "author": "Mikal Svendsen",
       "version": "1.0.0",
-      "isDefault": false,
       "isDefaultDark": false,
       "isDefaultLight": false,
       "mobileSupported": false,
@@ -67,15 +66,15 @@
       "skyboxJsonPath": null,
       "parallaxJsonPath": "/themes/parallax/parallax.json",
       "backgroundType": "parallax",
-      "type": "light"
+      "type": "light",
+      "isDefault": false
     },
     {
       "id": "pure-light",
       "name": "Pure Light",
-      "description": "Simple and pure light theme",
+      "description": "Simple and pure light theme (default light)",
       "author": "Mikal Svendsen",
       "version": "1.0.0",
-      "isDefault": true,
       "isDefaultDark": false,
       "isDefaultLight": true,
       "mobileSupported": true,
@@ -89,7 +88,8 @@
       "skyboxJsonPath": null,
       "parallaxJsonPath": null,
       "backgroundType": "none",
-      "type": "light"
+      "type": "light",
+      "isDefault": true
     },
     {
       "id": "skybox-3D",
@@ -97,7 +97,6 @@
       "description": "Immersive 3D skybox background with scroll parallax",
       "author": "Mikal Svendsen",
       "version": "1.0.0",
-      "isDefault": false,
       "isDefaultDark": false,
       "isDefaultLight": false,
       "mobileSupported": false,
@@ -111,7 +110,8 @@
       "skyboxJsonPath": "/themes/skybox-3D/skybox.json",
       "parallaxJsonPath": null,
       "backgroundType": "skybox",
-      "type": "dark"
+      "type": "dark",
+      "isDefault": false
     }
   ]
 }
