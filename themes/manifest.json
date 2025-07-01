@@ -27,8 +27,8 @@
       "isDefault": true
     },
     {
-      "id": "nordic-twilight",
-      "name": "Nordic Twilight",
+      "id": "north-light",
+      "name": "North Light",
       "description": "A dark theme inspired by the Northern Lights",
       "author": "Mikal Svendsen",
       "version": "1.0.0",
@@ -40,7 +40,7 @@
       "hasSkybox": false,
       "hasParallax": false,
       "jsPath": null,
-      "cssPath": "/themes/nordic-twilight/nordic-twilight.css",
+      "cssPath": "/themes/north-light/north-light.css",
       "assetsPath": null,
       "skyboxJsonPath": null,
       "parallaxJsonPath": null,
