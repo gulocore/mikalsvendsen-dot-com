@@ -4,5 +4,6 @@
   "author": "Mikal Svendsen",
   "version": "1.0.0",
   "type": "dark",
+  "listPrecedence": 3,
   "mobileSupported": true
 }

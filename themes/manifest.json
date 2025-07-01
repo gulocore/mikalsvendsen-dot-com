@@ -23,6 +23,7 @@
       "parallaxJsonPath": null,
       "backgroundType": "none",
       "type": "dark",
+      "listPrecedence": 1,
       "isDefault": true
     },
     {
@@ -45,6 +46,7 @@
       "parallaxJsonPath": null,
       "backgroundType": "none",
       "type": "dark",
+      "listPrecedence": 3,
       "isDefault": false
     },
     {
@@ -67,6 +69,7 @@
       "parallaxJsonPath": "/themes/parallax/parallax.json",
       "backgroundType": "parallax",
       "type": "light",
+      "listPrecedence": 4,
       "isDefault": false
     },
     {
@@ -89,6 +92,7 @@
       "parallaxJsonPath": null,
       "backgroundType": "none",
       "type": "light",
+      "listPrecedence": 2,
       "isDefault": true
     },
     {
@@ -111,6 +115,7 @@
       "parallaxJsonPath": null,
       "backgroundType": "skybox",
       "type": "dark",
+      "listPrecedence": 5,
       "isDefault": false
     }
   ]
