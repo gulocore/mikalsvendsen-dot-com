@@ -11,7 +11,7 @@
           "minMemory": 2
         }
       ],
-      "speed": 0.2,
+      "speed": 0.8,
       "direction": "horizontal",
       "zIndex": -400,
       "opacity": 1,
@@ -30,7 +30,7 @@
           "minMemory": 2
         }
       ],
-      "speed": 0.18,
+      "speed": 0.72,
       "direction": "horizontal",
       "zIndex": -300,
       "opacity": 1,
@@ -49,7 +49,7 @@
           "minMemory": 3
         }
       ],
-      "speed": 0.16,
+      "speed": 0.64,
       "direction": "horizontal",
       "zIndex": -100,
       "opacity": 1,
@@ -68,7 +68,7 @@
           "minMemory": 2
         }
       ],
-      "speed": 0.14,
+      "speed": 0.56,
       "direction": "horizontal",
       "zIndex": -50,
       "opacity": 1,
@@ -87,7 +87,7 @@
           "minMemory": 2
         }
       ],
-      "speed": 0.12,
+      "speed": 0.48,
       "direction": "horizontal",
       "zIndex": -40,
       "opacity": 1,
@@ -106,7 +106,7 @@
           "minMemory": 2
         }
       ],
-      "speed": 0.1,
+      "speed": 0.4,
       "direction": "horizontal",
       "zIndex": -30,
       "opacity": 1,
